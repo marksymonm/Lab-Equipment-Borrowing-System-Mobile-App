@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="30dp"
+    android:background="@drawable/loginbg"
+    tools:context=".ManageEquipment">
+
+    <ImageButton
+        android:id="@+id/backButton"
+        android:layout_width="30dp"
+        android:layout_height="30sp"
+        android:layout_marginTop="10dp"
+        android:background="@android:color/transparent"
+        android:contentDescription="Back Button"
+        android:scaleType="centerInside"
+        android:src="@drawable/backbtn"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="200dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="25dp"
+        android:contentDescription="Logo"
+        android:src="@drawable/borrowlablogotext"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.383"
+        app:layout_constraintStart_toEndOf="@id/backButton"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/title_manage_equipment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/montserrat_black"
+        android:text="@string/manage_equipment"
+        android:textColor="@color/header"
+        android:textAlignment="center"
+        android:lineSpacingExtra="-10dp"
+        android:textSize="50sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/logo" />
+
+    <TextView
+        android:id="@+id/title_add_equipment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginStart="30dp"
+        android:fontFamily="@font/montserrat_bold2"
+        android:text="@string/add_equipment"
+        android:textColor="#2E2929"
+        android:textSize="40sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/title_manage_equipment" />
+
+    <EditText
+        android:id="@+id/et_equipment_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:background="@drawable/inputfield"
+        android:hint="Name of equipment"
+        android:fontFamily="@font/montserrat_semibold"
+        android:textColor="@color/black"
+        android:textColorHint="@color/hint"
+        android:padding="14dp"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/title_add_equipment" />
+
+    <LinearLayout
+        android:id="@+id/add_equipment_row"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/et_equipment_name">
+
+        <EditText
+            android:id="@+id/et_add_quantity"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/inputfield"
+            android:hint="@string/quantity"
+            android:inputType="number"
+            android:fontFamily="@font/montserrat_semibold"
+            android:textColor="@color/black"
+            android:textColorHint="@color/hint"
+            android:padding="14dp"
+            android:textSize="16sp" />
+
+        <Spinner
+            android:id="@+id/spinner_add"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:background="@drawable/inputfield"
+            android:minWidth="100dp"
+            android:fontFamily="@font/montserrat_semibold"
+            android:textColor="@color/black"
+            android:textColorHint="@color/hint"
+            android:padding="14dp"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/btn_add"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:backgroundTint="#660E0E"
+        android:fontFamily="@font/montserrat_semibold"
+        android:text="@string/add"
+        android:textColor="@android:color/white"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/add_equipment_row" />
+
+    <TextView
+        android:id="@+id/title_remove_equipment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="30dp"
+        android:fontFamily="@font/montserrat_bold2"
+        android:text="@string/remove_equipment"
+        android:textColor="#2E2929"
+        android:textSize="40sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btn_add" />
+
+    <EditText
+        android:id="@+id/et_remove_equipment_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:background="@drawable/inputfield"
+        android:hint="@string/name_of_equipment"
+        android:fontFamily="@font/montserrat_semibold"
+        android:textColor="@color/black"
+        android:textColorHint="@color/hint"
+        android:padding="14dp"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/title_remove_equipment" />
+
+    <LinearLayout
+        android:id="@+id/remove_equipment_row"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/et_remove_equipment_name">
+
+        <EditText
+            android:id="@+id/et_remove_quantity"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/inputfield"
+            android:hint="@string/quantity"
+            android:inputType="number"
+            android:fontFamily="@font/montserrat_semibold"
+            android:textColor="@color/black"
+            android:textColorHint="@color/hint"
+            android:padding="14dp"
+            android:textSize="16sp" />
+
+        <Spinner
+            android:id="@+id/spinner_remove"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:background="@drawable/inputfield"
+            android:minWidth="100dp"
+            android:fontFamily="@font/montserrat_semibold"
+            android:textColor="@color/black"
+            android:textColorHint="@color/hint"
+            android:padding="14dp"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_remove"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:backgroundTint="#660E0E"
+        android:fontFamily="@font/montserrat_semibold"
+        android:text="@string/remove"
+        android:textColor="@android:color/white"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/remove_equipment_row" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "1042785587838",
+    "project_id": "fb-authentication-092323",
+    "storage_bucket": "fb-authentication-092323.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1042785587838:android:5d9cd33d9e7fe266933e2f",
+        "android_client_info": {
+          "package_name": "com.example.act5"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1042785587838-3bltohkngsgurpjjl7im1lb87n2huksf.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.act5",
+            "certificate_hash": "4905ca91af0936787bdf23e750a10b1b34c48896"
+          }
+        },
+        {
+          "client_id": "1042785587838-jcqnba1589ltujrkc9vvjt7jb1idf8qv.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.act5",
+            "certificate_hash": "82da1ad6bd86664606bb7d935fee0231afbcff3a"
+          }
+        },
+        {
+          "client_id": "1042785587838-n26344rcnrl1tjhuieevhfu471l1530o.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD2GlojWx22tyI6a0okev013TLmkxiCP_Q"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1042785587838-bg7dhqreq4pel2efqf6rlj4hipa5kcnv.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

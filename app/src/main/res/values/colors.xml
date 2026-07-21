@@ -1,0 +1,9 @@
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="text_color_light">#000000</color>
+    <color name="text_color_dark">#FFFFFF</color>
+    <color name="logregbtn">#720101</color>
+    <color name="hint">#2F0000</color>
+    <color name="header">#800000</color>
+</resources>

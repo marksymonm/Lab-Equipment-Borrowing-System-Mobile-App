@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:startDestination="@id/loginFragment">
+
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.example.act5.LoginFragment"
+        android:label="Login"
+        tools:layout="@layout/fragment_login">
+        <action
+            android:id="@+id/action_loginFragment_to_registerFragment"
+            app:destination="@id/registerFragment" />
+        <action
+            android:id="@+id/action_loginFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+        <action
+            android:id="@+id/action_loginFragment_to_labtechDashboard"
+            app:destination="@id/labtechDashboardFragment" />
+        <action
+            android:id="@+id/action_loginFragment_to_studentDashboardFragment"
+            app:destination="@id/studentDashboardFragment" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/registerFragment"
+        android:name="com.example.act5.RegisterFragment"
+        android:label="Register"
+        tools:layout="@layout/fragment_register">
+        <action
+            android:id="@+id/action_registerFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.example.act5.HomeFragment"
+        android:label="Home"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/labtechDashboardFragment"
+        android:name="com.example.act5.LabtechDashboard"
+        android:label="Labtech Dashboard"
+        tools:layout="@layout/activity_labtech_dashboard" />
+    <action
+        android:id="@+id/action_labtechDashboard_to_labtechList"
+        app:destination="@id/labtechListFragment" />
+    <action
+        android:id="@+id/action_labtechDashboard_to_manageEquipment"
+        app:destination="@id/manageEquipmentFragment" />
+    <action
+        android:id="@+id/action_labtechDashboard_to_managePrograms"
+        app:destination="@id/manageProgramsFragment" />
+    <action
+        android:id="@+id/action_labtechDashboard_to_borrowingHistory"
+        app:destination="@id/borrowingHistory" />
+    <action
+        android:id="@+id/action_labtechDashboard_to_loginFragment"
+        app:destination="@id/loginFragment" />
+    <action
+        android:id="@+id/action_labtechDashboard_to_notification"
+        app:destination="@id/notificationFragment" />
+
+    <fragment
+        android:id="@+id/labtechListFragment"
+        android:name="com.example.act5.LabtechList"
+        android:label="Labtech List"
+        tools:layout="@layout/activity_labtech_list">
+        <action
+            android:id="@+id/action_labtechList_to_labtechDashboard"
+            app:destination="@id/labtechDashboardFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/manageEquipmentFragment"
+        android:name="com.example.act5.ManageEquipment"
+        android:label="Manage Equipment"
+        tools:layout="@layout/activity_manage_equipment">
+        <action
+            android:id="@+id/action_manageEquipment_to_labtechDashboard"
+            app:destination="@id/labtechDashboardFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/manageProgramsFragment"
+        android:name="com.example.act5.ManagePrograms"
+        android:label="Manage Programs"
+        tools:layout="@layout/activity_manage_programs">
+        <action
+            android:id="@+id/action_managePrograms_to_labtechDashboard"
+            app:destination="@id/labtechDashboardFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/borrowingHistory"
+        android:name="com.example.act5.BorrowingHistory"
+        android:label="Borrowing History"
+        tools:layout="@layout/activity_borrowing_history">
+        <action
+            android:id="@+id/action_borrowingHistory_to_labtechDashboard"
+            app:destination="@id/labtechDashboardFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/notificationFragment"
+        android:name="com.example.act5.Notification"
+        android:label="Notification"
+        tools:layout="@layout/activity_notification">
+        <action
+            android:id="@+id/action_notification_to_labtechDashboard"
+            app:destination="@id/labtechDashboardFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/studentDashboardFragment"
+        android:name="com.example.act5.StudentDashboard"
+        android:label="Student Dashboard"
+        tools:layout="@layout/activity_student_dashboard" />
+    <action
+        android:id="@+id/action_studentDashboard_to_studentList"
+        app:destination="@id/studentListFragment" />
+    <action
+        android:id="@+id/action_studentDashboard_to_guidelines"
+        app:destination="@id/guidelinesFragment" />
+    <action
+        android:id="@+id/action_studentDashboard_to_studentNotification"
+        app:destination="@id/studentNotificationFragment" />
+    <action
+        android:id="@+id/action_studentDashboard_to_cart"
+        app:destination="@id/cartFragment" />
+    <action
+        android:id="@+id/action_studentDashboard_to_studentProfile"
+        app:destination="@id/studentProfileFragment" />
+    <action
+        android:id="@+id/action_studentDashboard_to_loginFragment"
+        app:destination="@id/loginFragment" />
+
+
+    <fragment
+        android:id="@+id/studentListFragment"
+        android:name="com.example.act5.StudentList"
+        android:label="Student List"
+        tools:layout="@layout/activity_student_list">
+        <action
+            android:id="@+id/action_studentList_to_studentDashboard"
+            app:destination="@id/studentDashboardFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/guidelinesFragment"
+        android:name="com.example.act5.Guidelines"
+        android:label="Guidelines"
+        tools:layout="@layout/activity_guidelines">
+        <action
+            android:id="@+id/action_guidelines_to_studentDashboard"
+            app:destination="@id/studentDashboardFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/studentNotificationFragment"
+        android:name="com.example.act5.StudentNotification"
+        android:label="Student Notification"
+        tools:layout="@layout/activity_notification_student">
+        <action
+            android:id="@+id/action_studentNotification_to_studentDashboard"
+            app:destination="@id/studentDashboardFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/cartFragment"
+        android:name="com.example.act5.cart"
+        android:label="Cart"
+        tools:layout="@layout/activity_cart">
+        <action
+            android:id="@+id/action_cart_to_studentDashboard"
+            app:destination="@id/studentDashboardFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/studentProfileFragment"
+        android:name="com.example.act5.StudentProfile"
+        android:label="Student Profile"
+        tools:layout="@layout/activity_studprofile">
+        <action
+            android:id="@+id/action_studentProfile_to_studentDashboard"
+            app:destination="@id/studentDashboardFragment" />
+    </fragment>
+
+
+</navigation>
